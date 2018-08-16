@@ -7,9 +7,6 @@ import java.util.concurrent.*;
 import java.util.regex.*;
 
 public class Solution {
-
-
-
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -19,12 +16,10 @@ public class Solution {
         int counter = 0;
         int sequence = 0;
         
-        while(n > 0)
-        {
+        while(n > 0){
             remind = n%2;
             n = n/2;
-            if (remind == 1)
-            {
+            if (remind == 1){
                 counter++;
                 if(counter > sequence)
                     sequence = counter;
